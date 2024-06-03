@@ -1,0 +1,11 @@
+﻿<div class="container p-3">
+    <div class="row">
+        @foreach (Zombie zombie in this.ViewBag.Maliste)
+        {
+            <div href="#" class="card  border m-3 text-center bg-warning" style="width: 20rem; background-image: url('/images/imagesLayout/Fond.png'); ">
+                <h3 class="card-body  text-warning">@zombie.Name</h3>
+                <h5>@zombie.Point</h5>
+            </div>
+        }
+    </div>
+</div>
